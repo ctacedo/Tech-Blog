@@ -1,0 +1,16 @@
+<div>
+  <header class="Post-Back">
+    <div class="column Post-Back">
+    <p><a href="/post/{{id}}" class="Post-Name">{{title}}</a></p> 
+  </header>
+
+<div class="card-content">
+        <div>
+            {{post_content}}
+        </div>
+        <div>
+            <b>{{user.username}}</b>
+                 | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        </div>
+        
+</div>
